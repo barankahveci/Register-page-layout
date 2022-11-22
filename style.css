@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 430px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    background: rgba(24, 33, 36, 0.4);
+    border-radius: 30px;
+    box-shadow: 10px 10px 11px black;
+}
+
+.container .title h1 {
+    font-size: 46px;
+    letter-spacing: 3px;
+    padding: 0 0 20px 0;
+    position: relative;
+}
+
+.container .title h1::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 66px;
+    bottom: 2px;
+    left: 110px;
+    top: 55px;
+    border-radius: 5px;
+    background: #FCEDE3;
+}
+
+.forms .input input {
+    width: 80%;
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+
+}
+
+.forms .input input::placeholder {
+    text-align: center;
+}
+
+.cins,
+label {
+    margin: 15px 0 0 0;
+}
+
+.input.btn input {
+    border-radius: 30px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.input.btn input:hover {
+    background: #FCEDE3;
+    color: black;
+}
+
+.container .already {
+    margin-top: 44px;
+}
+
+.already a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.already a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
